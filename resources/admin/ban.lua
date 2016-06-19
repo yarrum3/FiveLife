@@ -9,10 +9,10 @@ function banPlayerCommand ( theClient, commandName, bannedName, reason )
  
 		--Ban the player
 		banPlayer ( bannedPlayer, theClient, reason )
-		outputChatBox ( "ban: " .. bannedName .. " successfully banned", theClient )
+		outputChatBox ( "Admin: " .. bannedName .. " was successfully banned.", theClient )
  
 	else
-		outputChatBox ( "ban: You don't have enough permissions", theClient )
+		outputChatBox ( "Admin: You don't have epermission to use this command.", theClient )
 	end
  
 end
