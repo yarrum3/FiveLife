@@ -1,0 +1,7 @@
+.caption {
+	position:absolute;
+    bottom:0;
+    right:0;
+	font-family: 'Open Sans', sans-serif;
+	color: blue;
+}
