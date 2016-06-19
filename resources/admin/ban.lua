@@ -20,5 +20,5 @@ addCommandHandler ( "ban", banPlayerCommand )
  
 -- Example function with the root element. Here you would pass a player element to the function.
 function banCheater(theCheater)
-	banPlayer(theCheater, getRootElement(), "You are banned.")
+	banPlayer(theCheater, getRootElement(), "You have been banned from this server.")
 end
