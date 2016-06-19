@@ -6,5 +6,4 @@ end
     
 AddEventHandler('playerSpawned', function(spawn)
 	showNotification('Welcome!')
-	showNotification('ENJOY :)')
 end)
