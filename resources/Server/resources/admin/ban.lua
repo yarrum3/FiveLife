@@ -9,10 +9,10 @@ function banPlayerCommand ( theClient, commandName, bannedName, reason )
  
 		--Ban the player
 		banPlayer ( bannedPlayer, theClient, reason )
-		outputChatBox ( "ban: " .. bannedName .. " successfully banned", theClient )
+		outputChatBox ( "Admin: " .. bannedName .. " has been successfully banned.", theClient )
  
 	else
-		outputChatBox ( "ban: You don't have enough permissions", theClient )
+		outputChatBox ( "Admin: You don't have permission to use this command.", theClient )
 	end
  
 end
@@ -20,5 +20,5 @@ addCommandHandler ( "ban", banPlayerCommand )
  
 -- Example function with the root element. Here you would pass a player element to the function.
 function banCheater(theCheater)
-	banPlayer(theCheater, getRootElement(), "You are banned.")
+	banPlayer(theCheater, getRootElement(), "You are banned from this server.")
 end
