@@ -24,7 +24,7 @@ function onChat(player,_,...)
 local r,g,b = getTeamColor(getPlayerTeam(player))
   for _,v in ipairs(getElementsByType("player")) do
     if isPlayerInRangeOfPoint(v,px,py,pz,chat_range) then
-      outputChatBox(""..nick..": "..msg,v,r,g,b,true)
+      outputChatBox("(Local) "..nick..": "..msg,v,r,g,b,true)
     end
   end
 end
